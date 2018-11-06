@@ -66,7 +66,7 @@ class BrotherQLBackendPyUSB(BrotherQLBackendGeneric):
         """
 
         self.dev = None
-        self.read_timeout =    100. # ms
+        self.read_timeout =   1000. # ms
         self.write_timeout = 15000. # ms
         # strategy : try_twice or select
         self.strategy = 'try_twice'
